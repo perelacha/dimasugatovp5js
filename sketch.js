@@ -16,7 +16,7 @@ function setup() {
     link.style('font-size', '50px');
     link.position(50,377);
 
-    link2 = createA('https://www.dropbox.com/s/7uni55lucnv1z0j/CV_Dima_Sugatov.pdf?dl=0', 'Motion-design portfolio','_blank');
+    link2 = createA('https://vimeo.com/dimasugatov', 'Motion-design portfolio','_blank');
     link2.style('color', '#080FF6');
     link2.style('font-size', '50px');
     link2.position(50,436);
