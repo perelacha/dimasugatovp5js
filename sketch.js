@@ -2,9 +2,37 @@ let colors = [];
 let brush = { x:0, y:0, px:0, py:0 }
 let seed;
 
+let link;
+let link2;
+let Insta; 
+let telegram; 
+
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	noStroke();
+    
+    link = createA('https://www.dropbox.com/s/7uni55lucnv1z0j/CV_Dima_Sugatov.pdf?dl=0', 'My CV','_blank');
+    link.style('color', '#080FF6');
+    link.style('font-size', '50px');
+    link.position(50,377);
+
+    link2 =   createA('https://www.dropbox.com/s/7uni55lucnv1z0j/CV_Dima_Sugatov.pdf?dl=0', 'Motion-design portfolio','_blank');
+    link2.style('color', '#080FF6');
+    link2.style('font-size', '50px');
+    link2.position(50,436);
+
+
+    insta =   createA('https://www.instagram.com/dima_sugatov/', 'instagram','_blank');
+    insta.style('color', '#080FF6');
+    insta.style('font-size', '50px');
+    insta.position(50,652);
+
+    telegram =   createA('http://tlgg.ru/dimasugatov', 'telegram','_blank');
+    telegram.style('color', '#080FF6');
+    telegram.style('font-size', '50px');
+    telegram.position(50,704);
+
+
 
 
 	seed = random(1000);
@@ -21,14 +49,17 @@ function setup() {
 }
 
 function draw() {
-        push();
+    push();
 	textSize(50);
-        fill(0);
+    fill(0);
 	text("Hello World!\nMy name is Dima\nI'm a designer and creative coder",50,100);
-	textSize(78);
-	text("perela4a@gmail.com",50,width - 100);
 	pop();
 
+    push();
+	textSize(40);
+    fill(0);
+	text("Contact me:",50,640 );
+	pop();
    
 
 	brush.x+=(mouseX-brush.x)/12;
