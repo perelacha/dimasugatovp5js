@@ -5,10 +5,13 @@ let seed;
 let link;
 let link2;
 let Insta; 
-let telegram; 
+let telegram;
+
+let myFont; 
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+	myFont = loadFont('OpenSans-Regular.ttf'); 
 	noStroke();
     
     link = createA('https://www.dropbox.com/s/7uni55lucnv1z0j/CV_Dima_Sugatov.pdf?dl=0', 'My CV','_blank');
@@ -49,15 +52,13 @@ function setup() {
 }
 
 function draw() {
-    push();
+    	push();
+	textFont(myFont);
 	textSize(50);
-    fill(0);
+    	fill(0);
 	text("Hello World!\nMy name is Dima\nI'm a designer and creative coder",50,100);
-	pop();
-
-    push();
 	textSize(40);
-    fill(0);
+    	fill(0);
 	text("Contact me:",50,640 );
 	pop();
    
