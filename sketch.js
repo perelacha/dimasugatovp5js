@@ -21,10 +21,16 @@ function setup() {
 }
 
 function draw() {
-    push();
+        push();
 	textSize(50);
-    fill(0);
+        fill(0);
 	text("Hello World!\nMy name is Dima\nI'm a designer and creative coder",50,100);
+	pop();
+
+        push();
+	textSize(70);
+        fill(0);
+	text("perela4a@gmail.com",50,width/2 + 400);
 	pop();
 
    
