@@ -26,7 +26,7 @@ function draw() {
         fill(0);
 	text("Hello World!\nMy name is Dima\nI'm a designer and creative coder",50,100);
 	textSize(78);
-	text("perela4a@gmail.com",50,width - 50);
+	text("perela4a@gmail.com",50,width - 100);
 	pop();
 
    
