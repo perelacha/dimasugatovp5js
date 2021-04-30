@@ -13,8 +13,8 @@ let img;
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	
-    	img = createImg('stroke.png'); 
-    	img.position(0, 0);
+//     	img = createImg('stroke.png'); 
+//     	img.position(0, 0);
 
 	myFont = loadFont('OpenSans-Regular.ttf'); 
 	
