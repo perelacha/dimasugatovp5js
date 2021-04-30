@@ -8,6 +8,7 @@ let Insta;
 let telegram;
 
 let myFont; 
+let img; 
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
