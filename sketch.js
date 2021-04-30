@@ -11,9 +11,13 @@ let myFont;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+	
+    	img = createImg('stroke.png'); 
+    	img.position(0, 0);
+
 	myFont = loadFont('OpenSans-Regular.ttf'); 
-	noStroke();
-    
+	
+    noStroke();
     link = createA('https://www.dropbox.com/s/7uni55lucnv1z0j/CV_Dima_Sugatov.pdf?dl=0', 'My CV','_blank');
     link.style('color', '#080FF6');
     link.style('font-size', '50px');
